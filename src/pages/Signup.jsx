@@ -59,12 +59,12 @@ const Signup = () => {
                     Already have an account?
                 </p>
 
-                <Link to="/Login"
-                    className="btn btn-primary btn-lg btn-link w-100 mt-6" value="Sign Up" type="button" style={{ fontSize: "18px" ,textColor: "white"}}
-                     
-                >
+                <Link to="/Login">
+                    <button style={{backgroundColor: "#6D4D35"}}
+                 className="w-100 mt-4">
                     Login
-                </Link>
+                 </button>
+                    </Link>
 
             </div>
         </div>

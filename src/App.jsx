@@ -4,6 +4,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import AdminHome from "./pages/AdminHome";
 
+
 function App() {
   return (
     <BrowserRouter>
@@ -11,7 +12,7 @@ function App() {
 
         <Route path="/" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-
+        <Route path="/login" element={<Login />} />
         {/* Admin Panel */}
         <Route path="/AdminHome/*" element={<AdminHome />} />
 

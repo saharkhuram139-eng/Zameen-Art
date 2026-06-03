@@ -1,12 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
-
 import bgImage from "../assets/bg.jpg"
 
 const Login = () => {
-
-    
     const navigate = useNavigate();
-
     return (
         <div
        style={{
@@ -22,12 +18,8 @@ const Login = () => {
         paddingRight: "100px"
       }}
     >
-          
-
-
             {/* <h1>hellp </h1> */}
-
-            <div
+        <div
          style={{
           width: "400px",
           padding: "40px",
@@ -37,7 +29,7 @@ const Login = () => {
           color: "white",
           border: "1px solid rgba(255,255,255,0.3)"
         }}
-      >
+        >
             <h4 style={{ textAlign: "center", marginBottom: "25px" }}>Login</h4>
 
                 <div className="mt-2">
@@ -52,14 +44,20 @@ const Login = () => {
                 </div>
 
                 <Link to="/adminhome">
-                <button className="btn btn-primary w-100 mt-4">
+                <button style={{backgroundColor: "#6D4D35",color:"white",borderRadius:"5px"}}
+                 className="w-100 mt-4">
                 Login in to Dashboard
                 </button>
                 </Link>
                 <p className="text-center mt-3">Don't have an Account?</p>
-                {/* <p className="text-center mt-2" onClick={() => navigate("/signup")} style={{ textAlign: "center",color: "rgb(13, 110, 253)",cursor: "pointer",fontWeight: "500",marginTop: "-10px",textDecoration:"underline"}}>SignUp</p> */}
+                {/* <p className="text-center mt-2" onClick={() => navigate("/signup")} style={{ textAlign: "center",color: "#6D4D35",cursor: "pointer",fontWeight: "500",marginTop: "-10px",textDecoration:"underline"}}>SignUp</p> */}
                 <div>
-                    <Link to="/Signup">Sign up</Link>
+                    <Link to="/Signup">
+                    <button style={{backgroundColor: "#6D4D35",color:"white",borderRadius:"5px"}}
+                 className="w-100 mt-4">
+                    Sign up
+                 </button>
+                    </Link>
                 </div>
             </div>
         </div>
